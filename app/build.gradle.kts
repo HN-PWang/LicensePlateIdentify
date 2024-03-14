@@ -8,10 +8,12 @@ android {
 
     defaultConfig {
         applicationId = "com.example.licenseplateidentify"
-        minSdk = 24
+        minSdk = 26
         targetSdk = 31
         versionCode = 1
         versionName = "1.0"
+
+        multiDexEnabled = true
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -47,5 +49,5 @@ dependencies {
 
     implementation("com.github.HyperInspire:hyperlpr3-android-sdk:1.0.3")
     implementation("org.apache.poi:poi:5.0.0")
-    implementation("org.apache.poi:poi-ooxml:5.0.0")
+
 }
